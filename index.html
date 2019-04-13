@@ -3,13 +3,296 @@
 <head>
 <meta charset="UTF-8">
 <title>Thames River Anglers Association</title>
-<!-- link to reset first -->
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
 </head>
-
 <body>
-	<!--This is where the code goes-->    
-    <script src="js/main.js"></script>
+	<h1 class="hidden">Thames River Anglers Association</h1>
+	<section class="mainContainer"><h2 class="hidden">Main Container</h2>
+		<header>
+			<div id="logoCon"><img src="images/traa-logo.svg" alt="TRAA logo" id="logo"></div>
+			<h3>Welcome to the TRAA</h3>
+		</header>
+
+		<!-- Home Section -->
+		<section class="homeSection" id="homelinkCon">><h2 class="hidden">Home</h2>
+			<div id="navSide">
+				<nav id="mainNav"><ul>
+			 		<li><a href="#" id="homelink">Home</a></li>
+			 		<li><a href="#" id="newsletterslink">Newsletters</a></li>
+			 		<li><a href="#" id="projectslink">Past Events/Projects</a></li>
+			 		<li><a href="#" id="joinuslink">Join Us</a></li>
+			 		<li><a href="#" id="aboutlink">About</a></li>
+			 		<li><a href="#" id="contactlink">Contact Us</a></li>
+			 	</ul></nav>
+			 	<button id="navButton">MENU</button>
+			</div>
+			<div id="heroImg">
+				<img src="images/mobile/hero_mobile.jpg" alt="swans on a lake">
+			</div>
+		</section>
+
+		<div id="divider"></div>
+
+		<!-- Newsletters section -->
+		<section class="newsletterCon" id="newsletterslinkCon"><h2>NEWSLETTERS</h2>
+			<div id="accordionNewsletters">
+				<h3 id="accordionTitle">2011</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">1st Quarter</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">2010</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">April</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">2009</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">March</a></li>
+						<li><a href="#">May</a></li>
+						<li><a href="#">June</a></li>
+						<li><a href="#">August</a></li>
+						<li><a href="#">September</a></li>
+						<li><a href="#">October</a></li>
+						<li><a href="#">November</a></li>
+						<li><a href="#">December</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">2008</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">March</a></li>
+						<li><a href="#">May</a></li>
+						<li><a href="#">June</a></li>
+						<li><a href="#">December</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">2007</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">January</a></li>
+						<li><a href="#">February</a></li>
+						<li><a href="#">April</a></li>
+						<li><a href="#">May</a></li>
+						<li><a href="#">June</a></li>
+						<li><a href="#">November</a></li>
+						<li><a href="#">December</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">2006</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">June</a></li>
+						<li><a href="#">October</a></li>
+						<li><a href="#">November</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">2005</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">Spring</a></li>
+						<li><a href="#">Summer</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">2004</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">Winter</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">2003</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">Spring</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">2001</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">Spring</a></li>
+						<li><a href="#">Summer</a></li>
+						<li><a href="#">Fall/Winter</a></li>
+						<li><a href="#">Winter/Spring</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">2000</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">Spring</a></li>
+						<li><a href="#">Summer</a></li>
+						<li><a href="#">Fall</a></li>
+						<li><a href="#">Winter</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">1999</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">Spring</a></li>
+						<li><a href="#">Summer</a></li>
+						<li><a href="#">Fall</a></li>
+						<li><a href="#">Winter</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">1997</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">Summer</a></li>
+						<li><a href="#">Fall</a></li>
+						<li><a href="#">Winter</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">1996</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">Winter</a></li>
+					</ul>
+				</div>
+				<h3 id="accordionTitle">1986</h3>
+				<div id="accordionContent">
+					<ul>
+						<li><a href="#">October</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<div id="divider"></div>
+
+		<!-- Past Events / Projects  -->
+		<section class="pasteventsCon" id="projectslinkCon">>
+			<div id="titlePastevents">
+				<h2>PAST EVENTS / PROJECTS</h2>
+			</div>
+			<div id="projects">
+				<div id="imageContainer">
+					<div id="projectsImages" style="right:0">
+						<img src="images/mobile/past_events_mobile_1.jpg">
+						<img src="images/mobile/past_events_mobile_1.jpg">
+						<img src="images/mobile/past_events_mobile_1.jpg">
+						<img src="images/mobile/past_events_mobile_1.jpg">
+					</div>
+				</div>
+				<ul id="projectButtons">
+					<li class="prjCircle" data-offset="0"><div></div></li>
+					<li class="prjCircle" data-offset="1"><div></div></li>
+					<li class="prjCircle" data-offset="2"><div></div></li>
+					<li class="prjCircle" data-offset="3"><div></div></li>
+				</ul>
+			</div>
+		</section>
+
+		<div id="divider"></div>
+
+		<!-- join us section -->
+		<section class="joinCon" id="joinuslinkCon">
+			<div id="titleJoin">
+				<h2>JOIN US</h2>
+				<p>You get to be a TRAA member for a whole year for just $25</p>
+			</div>
+			<div id="donate">
+				<div id="donateImagery">
+					<div id="imageContainer2">
+						<div id="donateImages" style="right:0">
+							<img src="images/mobile/joinus_mobile_1.png" alt="A fish">
+							<img src="images/mobile/joinus_mobile_2.png" alt="man holding fish">
+							<img src="images/mobile/joinus_mobile_3.png" alt="stream work party">
+						</div>
+					</div>
+				</div>
+				<ul id="donateImgButtons">
+					<li class="donCircle" data-offset2="0"><div></div></li>
+					<li class="donCircle" data-offset2="1"><div></div></li>
+					<li class="donCircle" data-offset2="2"><div></div></li>
+				</ul>
+				<div id="donateInfo">
+					<p>You've taken great interest so far.<br>Help us continue by being part of the solution!</p>
+					<button>DONATE</button>
+				</div>
+			</div>
+			<div id="shop">
+				<div id="shopImagery">
+					<div id="imageContainer3">
+						<div id="shopImages" style="right:0">
+							<img src="images/mobile/hoodie_front.png" alt="TRAA hoodie">
+							<img src="images/mobile/cap.png" alt="TRAA cap">
+							<img src="images/mobile/coffee_cups.png" alt="TRAA Coffee Cups">
+						</div>
+					</div>
+				</div>
+				<ul id="shopImgButtons">
+					<li class="shopCircle" data-offset3="0"><div></div></li>
+					<li class="shopCircle" data-offset3="1"><div></div></li>
+					<li class="shopCircle" data-offset3="2"><div></div></li>
+				</ul>
+				<div id="shopInfo">
+					<p>TRAA gear is now available at unbelievable prices!<br>100% of the revenue goes to our projects.</p>
+					<button>SHOP</button>
+				</div>
+			</div>
+		</section>
+
+		<div id="divider"></div>
+
+		<!-- about section -->
+		<section class="aboutCon" id="aboutlinkCon">
+			<div id="titleAbout">
+				<h2>ABOUT US</h2>
+			</div>
+			<div id="aboutInfo">
+				<div id="page">
+					<p>The TRAA Works at a Grassroots Level Within the Thames River Watershed to protect, enhance and regenerate a viable, multi-species, year-round fishery.</p>
+					<p>We promote and participate in environmental clean-up, pollution control and rehabilitation, form partnerships increasing public awareness of the unique diversity of the Thames River Watershed, its challenges, its recreational opportunities and its vital importance to our community.</p>
+				</div>
+			</div>
+		</section>
+
+		<div id="divider"></div>
+
+		<!-- contact us section -->
+		<section class="contactCon" id="contactlinkCon">
+			<div id="titleContact">
+				<h2>CONTACT US</h2>
+			<p>Come talk to us at a TRAA General Meeting.<br>Guests are welcome!</p>
+			</div>
+			<div id="contactForm">
+				<div id="row1">
+					<input type="text" placeholder="First Name">
+					<input type="text" placeholder="Last Name">
+				</div>
+				<input type="email" placeholder="Email ID">
+				<input type="number" placeholder="Phone #">
+				<input type="text" placeholder="Type a Message here...">
+				<button>SUBMIT</button>
+			</div>
+			<div id="subscription">
+				<p>Subscribe to our newsletter!</p>
+				<div id="subscribeInput">
+					<input type="email" placeholder="johndoe@example.com">
+					<input type="submit" value="SUBSCRIBE">
+				</div>
+			</div>
+			<div id="otherInfo">
+				<p>General meeting:<br>
+					Venue - 790, Southdale Road East<br>
+					Time - 7:00PM, every second Wednesday</p>
+				<p>Mailing adress:<br>
+					Thames River Anglers Association,<br>
+					2202 Coronation Drive,<br>
+					London, Ontario - n6G 0B9</p>
+			</div>
+
+			<!-- footer -->
+			<footer>
+				<p>COPYRIGHT &#169 TRAA 2019</p>
+			</footer>
+
+	</section>
+ <script src="js/main.js"></script>
 </body>
 </html>
