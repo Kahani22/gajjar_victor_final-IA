@@ -3,7 +3,9 @@
 
 	let button 		= document.querySelector("#navButton");
 		mainNav		= document.querySelector("#mainNav");
-		links		= document.querySelectorAll("#mainNav a");
+		links		= document.querySelectorAll("#mainNav ul li a");
+		backToTop	= document.querySelector("#backToTop");
+		homeArea	= document.querySelector("#homelinkCon");
 
 	const	prjButtons  = document.querySelectorAll('.prjCircle'); 
 			projects	= document.querySelector("#projectsImages");
@@ -29,21 +31,21 @@
 
 	// projects animation
 	function projectAnim() {
-		const offSet = 775;
+		const offSet = 350;
 		let currentOffset = this.dataset.offset * offSet;
 		projects.style.right = currentOffset + "px";
 	}
 
 	// donate imgs animation
 	function donImgAnim() {
-		const Offset = 405;
+		const Offset = 204;
 		let currentOffSet = this.dataset.offset2 * Offset;
 		donateImg.style.right = currentOffSet + "px";
 	}
 
 	// shop imgs animation
 	function shopImgAnim() {
-		const OffSet = 405;
+		const OffSet = 204;
 		let currentoffSet = this.dataset.offset3 * OffSet;
 		shopImg.style.right = currentoffSet + "px";
 	}
@@ -53,6 +55,12 @@
 		e.preventDefault();
 		let contentArea = e.currentTarget.id + "Con"
 		TweenLite.to(window, 1, {scrollTo:{y:`#${contentArea}`, offsetY: 200, autoKill: false}});
+	}
+
+	//back to top function
+	function scrollBackUp(e) {
+		e.preventDefault();
+		TweenLite.to(window, 1, {scrollTo:{y:homeArea}, autoKill: false});
 	}
 
 
@@ -70,5 +78,7 @@
 	shopButtons.forEach(button3 => button3.addEventListener('click', shopImgAnim));
 
 	links.forEach(link => link.addEventListener('click', scrolling));
+
+	backToTop.addEventListener('click', scrollBackUp);
 
 })();
