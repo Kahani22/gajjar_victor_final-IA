@@ -10,6 +10,7 @@
 </head>
 <body>
 	<h1 class="hidden">Thames River Anglers Association</h1>
+	<div id="topBar"></div>
 	<section class="mainContainer"><h2 class="hidden">Main Container</h2>
 		<header>
 			<div id="logoCon"><img src="images/traa-logo.svg" alt="TRAA logo" id="logo"></div>
@@ -17,24 +18,32 @@
 		</header>
 
 		<!-- Home Section -->
-		<section class="homeSection" id="homelinkCon">><h2 class="hidden">Home</h2>
+		<section class="homeSection" id="homelinkCon"><h2 class="hidden">Home</h2>
 			<div id="navSide">
-				<nav id="mainNav"><ul>
-			 		<li><a href="#" id="homelink">Home</a></li>
-			 		<li><a href="#" id="newsletterslink">Newsletters</a></li>
-			 		<li><a href="#" id="projectslink">Past Events/Projects</a></li>
-			 		<li><a href="#" id="joinuslink">Join Us</a></li>
-			 		<li><a href="#" id="aboutlink">About</a></li>
-			 		<li><a href="#" id="contactlink">Contact Us</a></li>
-			 	</ul></nav>
-			 	<button id="navButton">MENU</button>
+				<button id="navButton">MENU</button>
+				<nav id="mainNav">
+					<ul>
+				 		<li><a href="#" id="homelink">Home</a></li>
+				 		<li><a href="#" id="newsletterslink">Newsletters</a></li>
+				 		<li><a href="#" id="projectslink">Past Events/Projects</a></li>
+				 		<li><a href="#" id="joinuslink">Join Us</a></li>
+				 		<li><a href="#" id="aboutlink">About</a></li>
+				 		<li><a href="#" id="contactlink">Contact Us</a></li>
+				 	</ul>
+			 		<div id="navIcons">
+			 			<a href="#"><img src="images/phone.svg"></a>
+			 			<a href="#"><img src="images/facebook.svg"></a>
+			 			<a href="#"><img src="images/youtube.svg"></a>
+			 		</div>
+			 	</nav>
 			</div>
 			<div id="heroImg">
-				<img src="images/mobile/hero_mobile.jpg" alt="swans on a lake">
+				<img src="images/mobile/hero_mobile.jpg" alt="swans on a lake" id="heroMobile">
+				<img src="images/desktop/hero_desktop.jpg" alt="swans on lake" id="heroDesktop">
 			</div>
 		</section>
 
-		<div id="divider"></div>
+		<div id="divider-1"></div>
 
 		<!-- Newsletters section -->
 		<section class="newsletterCon" id="newsletterslinkCon"><h2>NEWSLETTERS</h2>
@@ -165,7 +174,7 @@
 		<div id="divider"></div>
 
 		<!-- Past Events / Projects  -->
-		<section class="pasteventsCon" id="projectslinkCon">>
+		<section class="pasteventsCon" id="projectslinkCon">
 			<div id="titlePastevents">
 				<h2>PAST EVENTS / PROJECTS</h2>
 			</div>
@@ -261,7 +270,7 @@
 			<p>Come talk to us at a TRAA General Meeting.<br>Guests are welcome!</p>
 			</div>
 			<div id="contactForm">
-				<div id="row1">
+				<div id="row">
 					<input type="text" placeholder="First Name">
 					<input type="text" placeholder="Last Name">
 				</div>
@@ -269,13 +278,6 @@
 				<input type="number" placeholder="Phone #">
 				<input type="text" placeholder="Type a Message here...">
 				<button>SUBMIT</button>
-			</div>
-			<div id="subscription">
-				<p>Subscribe to our newsletter!</p>
-				<div id="subscribeInput">
-					<input type="email" placeholder="johndoe@example.com">
-					<input type="submit" value="SUBSCRIBE">
-				</div>
 			</div>
 			<div id="otherInfo">
 				<p>General meeting:<br>
@@ -286,13 +288,24 @@
 					2202 Coronation Drive,<br>
 					London, Ontario - n6G 0B9</p>
 			</div>
+			<div id="subscription">
+				<p>Subscribe to our newsletter!</p>
+				<div id="subscribeInput">
+					<input type="email" placeholder="johndoe@example.com">
+					<input type="submit" value="SUBSCRIBE">
+				</div>
+			</div>
+		</section>
 
-			<!-- footer -->
-			<footer>
-				<p>COPYRIGHT &#169 TRAA 2019</p>
-			</footer>
+			<!-- back to top button -->
+			<img src="images/fish_button.svg" id="backToTop" alt="back to top button">
 
 	</section>
+
+	<!-- footer -->
+	<footer>
+		<p>COPYRIGHT &#169 TRAA 2019</p>
+	</footer>
  <script src="js/main.js"></script>
 </body>
 </html>
