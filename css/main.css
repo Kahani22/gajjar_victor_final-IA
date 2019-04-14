@@ -23,9 +23,10 @@ img:hover
 	filter: brightness(130%);
 }
 
-button
+button:hover
 {
-	opacity: .8;
+	opacity: .5;
+	transform: scale(.9);
 }
 
 input
@@ -794,6 +795,12 @@ header h3
 	width: 30%;
 }
 
+#subscription input:last-child:hover
+{
+	background-color: green;
+	color: white;
+}
+
 #mapCon
 {
 	display: none;
@@ -1018,11 +1025,6 @@ footer p
 
 @media screen and (min-width: 950px) {
 
-		#backToTop
-		{
-			display: none;
-		}
-
 		.pasteventsCon
 		{
 			display: flex;
@@ -1084,7 +1086,6 @@ footer p
 		{
 			height: 20px;
 		}
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -1153,14 +1154,14 @@ footer p
 		margin-top: -100px;
 	}
 
-	#imageContainer2
-	{
-		margin-left: -15px;
-	}
-
 	iframe
 	{
 		width: 600px;
+	}
+
+	#notNavSide
+	{
+		background-attachment: fixed;
 	}
 
 }
@@ -1173,4 +1174,20 @@ footer p
 		flex-direction: row;
 		margin-left: -5px;
 	}
+
+	#homeInfo
+	{
+		font-size: 1.2em;
+	}
+
+	#homeInfo h4, #homeInfo p
+	{
+		padding-right: 40px;
+	}
+
+	#notNavSide
+	{
+		background-attachment: fixed;
+	}
+
 }
