@@ -9,6 +9,11 @@
 		backToTop	= document.querySelector("#backToTop");
 		homeArea	= document.querySelector("#homelinkCon");
 
+<<<<<<< HEAD
+		topBar		= document.querySelector("#topBar");
+
+=======
+>>>>>>> master
 		video		= document.querySelector("#TRAAvideo");
 		closeVid	= document.querySelector("#closeVideo")
 
@@ -65,7 +70,7 @@
 	//back to top function
 	function scrollBackUp(e) {
 		e.preventDefault();
-		TweenLite.to(window, 1, {scrollTo:{y:homeArea}, autoKill: false});
+		TweenLite.to(window, 1, {scrollTo:{y:topBar}, autoKill: false});
 	}
 
 	//close video lightbox
