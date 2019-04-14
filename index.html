@@ -12,15 +12,30 @@
 	<h1 class="hidden">Thames River Anglers Association</h1>
 	<div id="topBar"></div>
 	<section class="mainContainer"><h2 class="hidden">Main Container</h2>
+
+		<section class="videoCon"><h2 class="hidden">Introduction Video</h2>
+			<div id="closeVideo">SKIP</div>
+			<video0 src="assets/intro-vid.mp4" id="TRAAvideo" alt="introductory video" autoplay controls/>
+		</section>
+
 		<header>
 			<div id="logoCon"><img src="images/traa-logo.svg" alt="TRAA logo" id="logo"></div>
 			<h3>Welcome to the TRAA</h3>
+			<nav id="mainNav2">
+				<ul>
+			 		<li><a href="#" id="newsletterslink">Newsletters</a></li>
+			 		<li><a href="#" id="projectslink">Past Events/Projects</a></li>
+			 		<li><a href="#" id="joinuslink">Join Us</a></li>
+			 		<li><a href="#" id="aboutlink">About</a></li>
+			 		<li><a href="#" id="contactlink">Contact Us</a></li>
+			 	</ul>
+			</nav>
 		</header>
 
 		<!-- Home Section -->
 		<section class="homeSection" id="homelinkCon"><h2 class="hidden">Home</h2>
 			<div id="navSide">
-				<button id="navButton">MENU</button>
+				<button id="navButton"><p>MENU</p></button>
 				<nav id="mainNav">
 					<ul>
 				 		<li><a href="#" id="homelink">Home</a></li>
@@ -37,13 +52,16 @@
 			 		</div>
 			 	</nav>
 			</div>
-			<div id="heroImg">
-				<img src="images/mobile/hero_mobile.jpg" alt="swans on a lake" id="heroMobile">
-				<img src="images/desktop/hero_desktop.jpg" alt="swans on lake" id="heroDesktop">
+			<div id="notNavSide">
+				<div id="homeInfo">
+					<h4>THAMES RIVER ANGLERS ASSOCIATION</h4>
+					<p>"For the enhancement, tand promotion of a viable,<br>
+					multi-species fishery within the Thames River watershed.”</p>
+				</div>
 			</div>
 		</section>
 
-		<div id="divider-1"></div>
+		<div id="divider"></div>
 
 		<!-- Newsletters section -->
 		<section class="newsletterCon" id="newsletterslinkCon"><h2>NEWSLETTERS</h2>
@@ -182,9 +200,15 @@
 				<div id="imageContainer">
 					<div id="projectsImages" style="right:0">
 						<img src="images/mobile/past_events_mobile_1.jpg">
-						<img src="images/mobile/past_events_mobile_1.jpg">
-						<img src="images/mobile/past_events_mobile_1.jpg">
-						<img src="images/mobile/past_events_mobile_1.jpg">
+						<img src="images/mobile/past_events_mobile_2.jpg">
+						<img src="images/mobile/past_events_mobile_3.jpg">
+						<img src="images/mobile/past_events_mobile_4.jpg">
+					</div>
+					<div id="projectsImages2" style="right:0">
+						<img src="images/desktop/past_events_desktop_1.jpg">
+						<img src="images/desktop/past_events_desktop_2.jpg">
+						<img src="images/desktop/past_events_desktop_3.jpg">
+						<img src="images/desktop/past_events_desktop_4.jpg">
 					</div>
 				</div>
 				<ul id="projectButtons">
@@ -204,44 +228,46 @@
 				<h2>JOIN US</h2>
 				<p>You get to be a TRAA member for a whole year for just $25</p>
 			</div>
-			<div id="donate">
-				<div id="donateImagery">
-					<div id="imageContainer2">
-						<div id="donateImages" style="right:0">
-							<img src="images/mobile/joinus_mobile_1.png" alt="A fish">
-							<img src="images/mobile/joinus_mobile_2.png" alt="man holding fish">
-							<img src="images/mobile/joinus_mobile_3.png" alt="stream work party">
+			<div id="donate-shop">
+				<div id="donate">
+					<div id="donateImagery">
+						<div id="imageContainer2">
+							<div id="donateImages" style="right:0">
+								<img src="images/mobile/joinus_mobile_1.png" alt="A fish">
+								<img src="images/mobile/joinus_mobile_2.png" alt="man holding fish">
+								<img src="images/mobile/joinus_mobile_3.png" alt="stream work party">
+							</div>
 						</div>
 					</div>
-				</div>
-				<ul id="donateImgButtons">
-					<li class="donCircle" data-offset2="0"><div></div></li>
-					<li class="donCircle" data-offset2="1"><div></div></li>
-					<li class="donCircle" data-offset2="2"><div></div></li>
-				</ul>
-				<div id="donateInfo">
-					<p>You've taken great interest so far.<br>Help us continue by being part of the solution!</p>
-					<button>DONATE</button>
-				</div>
-			</div>
-			<div id="shop">
-				<div id="shopImagery">
-					<div id="imageContainer3">
-						<div id="shopImages" style="right:0">
-							<img src="images/mobile/hoodie_front.png" alt="TRAA hoodie">
-							<img src="images/mobile/cap.png" alt="TRAA cap">
-							<img src="images/mobile/coffee_cups.png" alt="TRAA Coffee Cups">
-						</div>
+					<ul id="donateImgButtons">
+						<li class="donCircle" data-offset2="0"><div></div></li>
+						<li class="donCircle" data-offset2="1"><div></div></li>
+						<li class="donCircle" data-offset2="2"><div></div></li>
+					</ul>
+					<div id="donateInfo">
+						<p>You've taken great interest so far.<br>Help us continue by being part of the solution!</p>
+						<button>DONATE</button>
 					</div>
 				</div>
-				<ul id="shopImgButtons">
-					<li class="shopCircle" data-offset3="0"><div></div></li>
-					<li class="shopCircle" data-offset3="1"><div></div></li>
-					<li class="shopCircle" data-offset3="2"><div></div></li>
-				</ul>
-				<div id="shopInfo">
-					<p>TRAA gear is now available at unbelievable prices!<br>100% of the revenue goes to our projects.</p>
-					<button>SHOP</button>
+				<div id="shop">
+					<div id="shopImagery">
+						<div id="imageContainer3">
+							<div id="shopImages" style="right:0">
+								<img src="images/mobile/hoodie_front.png" alt="TRAA hoodie">
+								<img src="images/mobile/cap.png" alt="TRAA cap">
+								<img src="images/mobile/coffee_cups.png" alt="TRAA Coffee Cups">
+							</div>
+						</div>
+					</div>
+					<ul id="shopImgButtons">
+						<li class="shopCircle" data-offset3="0"><div></div></li>
+						<li class="shopCircle" data-offset3="1"><div></div></li>
+						<li class="shopCircle" data-offset3="2"><div></div></li>
+					</ul>
+					<div id="shopInfo">
+						<p>TRAA gear is now available at unbelievable prices!<br>100% of the revenue goes to our projects.</p>
+						<button>SHOP</button>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -275,37 +301,43 @@
 					<input type="text" placeholder="Last Name">
 				</div>
 				<input type="email" placeholder="Email ID">
-				<input type="number" placeholder="Phone #">
-				<input type="text" placeholder="Type a Message here...">
+				<input type="text" placeholder="Phone #">
+				<input type="text" placeholder="Type a Message here..." id="messageBox">
 				<button>SUBMIT</button>
 			</div>
 			<div id="otherInfo">
-				<p>General meeting:<br>
-					Venue - 790, Southdale Road East<br>
-					Time - 7:00PM, every second Wednesday</p>
-				<p>Mailing adress:<br>
-					Thames River Anglers Association,<br>
-					2202 Coronation Drive,<br>
-					London, Ontario - n6G 0B9</p>
+				<div id="otherInfoCon">
+					<p>General meeting:<br>
+						Venue - 790, Southdale Road East<br>
+						Time - 7:00PM, every second Wednesday</p>
+					<p>Mailing adress:<br>
+						Thames River Anglers Association,<br>
+						2202 Coronation Drive,<br>
+						London, Ontario - n6G 0B9</p>
+				</div>
+				<div id="mapCon">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93982.05456126282!2d-81.92649765607028!3d42.59903336951477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882f95719158c333%3A0x350631ac91fde3a1!2sThames+River!5e0!3m2!1sen!2sca!4v1555209127762!5m2!1sen!2sca" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
 			</div>
 			<div id="subscription">
 				<p>Subscribe to our newsletter!</p>
 				<div id="subscribeInput">
-					<input type="email" placeholder="johndoe@example.com">
+					<input type="email" placeholder="johndoe@example.com" required>
 					<input type="submit" value="SUBSCRIBE">
 				</div>
 			</div>
 		</section>
 
-			<!-- back to top button -->
-			<img src="images/fish_button.svg" id="backToTop" alt="back to top button">
-
 	</section>
 
+	<!-- back to top button -->
 	<!-- footer -->
 	<footer>
 		<p>COPYRIGHT &#169 TRAA 2019</p>
 	</footer>
+
+	<img src="images/fish_button.svg" id="backToTop" alt="back to top button">
+
  <script src="js/main.js"></script>
 </body>
 </html>
