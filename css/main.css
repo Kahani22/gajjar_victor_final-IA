@@ -49,21 +49,67 @@ h1, h2, h3, h4
 	color: green;
 }
 
+video
+{
+	width: 100%;
+}
+
+video, #closeVideo
+{
+	-webkit-animation-name: videoAnim;
+	-webkit-animation-duration: .7s;
+	-webkit-animation-iteration-count: 1; 
+}
+
+@-webkit-keyframes videoAnim
+{
+	0% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+video.videoClose
+{
+	display: none;
+}
+
+#closeVideo
+{
+	font-family: Arial, sans-serif;
+	background-color: green;
+	opacity: .7;
+	position: absolute;
+	color: black;
+	font-size: 1em;
+	top: 55px;
+	right: 40px;
+	transition: .5s;
+	cursor: pointer;
+	display: block;
+	padding: 10px 20px 10px 20px;
+	z-index: 7;
+	color: white;
+}
+
+#closeVideo.closeClose
+{
+	display: none;
+}
+
+#closeVideo:hover
+{
+	opacity: .8;
+}
+
 #divider
 {
 	width: 100%;
 	height: 2px;
 	background-color: #ccc;
 	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-#divider-1
-{
-	width: 100%;
-	height: 2px;
-	background-color: #ccc;
-	margin-top: 150px;
 	margin-bottom: 40px;
 }
 
@@ -110,24 +156,44 @@ header h3
 	display: flex;
 	flex-direction: row;
 	margin-top: 20px;
+	justify-content: center;
 }
 
-#heroImg
+#notNavSide
 {
 	overflow: hidden;
-	position: absolute;
-	margin-left: 37px;
+	width: 100%;
+	height: 260px;
+	background: url(../images/mobile/hero_mobile.jpg);
 }
 
-#heroImg img
+#homeInfo
 {
-	width: 335px;
-	height: 265px;
+	background: rgba(34, 139, 34, .4);
+	position: relative;
+	bottom: 0;
+	margin-top: 180px
 }
 
-#heroDesktop
+#homeInfo p
 {
-	display: none;
+	text-align: right;
+	z-index: 7;
+	font-size: .8em;
+	color: white;
+	font-style: italic;
+	padding: 10px;
+}
+
+#homeInfo h4
+{
+	text-align: right;
+	z-index: 7;
+	font-size: .8em;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	padding-bottom: 0px;
 }
 
 #navSide
@@ -137,32 +203,30 @@ header h3
 	z-index: 1;
 }
 
-button
-{
-	margin-top: 112px;
-	margin-left: -115px;
-	background-color: #ccc;
-	opacity: 1;
-}
-
-#navButton
+#navButton p
 {
 	transform: rotate(-90deg);
-	font-size: 1em;
-	width: 265px;
-	height: 40px;
+}
+
+#mainNav2
+{
+	display: none;
 }
 
 #mainNav
 {
 	display: none;
 	background: rgba(0, 0, 0, .7);
-	margin-left: -113px;
-	padding-right: 30px;
+	padding-right: 40px;
+	font-size: .9em;
+	margin-left: 55px;
 	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	-webkit-animation-name: navToggle;
 	-webkit-animation-duration: .5s;
 	-webkit-animation-iteration-count: 1;
+	position: absolute;
 }
 
 @-webkit-keyframes navToggle
@@ -291,6 +355,14 @@ button
 	margin-top: 10px;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+}
+
+#titlePastevents
+{
+	border: solid green 3px;
+	padding-left: 20px;
+	padding-top: 20px;
 }
 
 #titlePastevents h2
@@ -298,7 +370,7 @@ button
 	transform: rotate(-90deg);
 	width: 500px;
 	margin-left: -250px;
-	margin-top:-10px;
+	margin-top: -30px;
 	font-size: 1em;
 }
 
@@ -313,6 +385,7 @@ button
 	overflow: hidden;
 	margin-left: -220px;
 	width: 350px;
+	cursor: pointer;
 }
 
 #imageContainer img
@@ -332,7 +405,6 @@ button
 {
 	display: flex;
 	flex-direction: row;
-	margin-top: 10px;
 	margin-left: -90px;
 }
 
@@ -452,7 +524,7 @@ button
 	flex-direction: column;
 	justify-content: center;
 	margin-top: -145px;
-	border: solid green 5px;
+	border: solid green 3px;
 	padding: 150px 0px 30px 0px;
 }
 
@@ -539,7 +611,7 @@ button
 	flex-direction: column;
 	justify-content: center;
 	margin-top: -145px;
-	border: solid green 5px;
+	border: solid green 3px;
 	padding: 150px 0px 30px 0px;
 }
 
@@ -570,18 +642,27 @@ button
 
 #titleAbout h2
 {
-	transform: rotate(-90deg);
-	width: 500px;
-	margin-left: -250px;
-	margin-right: -230px;
-	margin-top: -80px;
 	font-size: 1em;
+	transform: rotate(-90deg);
+	width: 100px;
+	margin-left: -40px;
+}
+
+#titleAbout
+{
+	width: 20px;
+	margin-top: 20px;
+	border: solid green 3px;
+	padding-top: 40px;
+	padding-bottom: 10px;
 }
 
 #aboutInfo
 {
 	background: url(../images/mobile/past_events_mobile_1.jpg) no-repeat;
 	background-color: #ccc;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 #page
@@ -703,6 +784,11 @@ button
 	width: 30%;
 }
 
+#mapCon
+{
+	display: none;
+}
+
 #otherInfo
 {
 	margin-top: 10px;
@@ -718,6 +804,7 @@ button
 
 #backToTop
 {
+	display: block;
 	height: 30px;
 	width: 35px;
 	padding: 15px 10px 15px 15px;
@@ -727,8 +814,8 @@ button
 	background-color: #fff;
 	box-shadow: 2px 5px 8px #888;
 	z-index: 7;
-	margin-left: 300px;
-	margin-top: 500px;
+	bottom: 20px;
+	right: 20px;
 }
 
 /*footer*/
@@ -751,7 +838,169 @@ footer p
 
 /*media queries*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 530px) {
 
+	#notNavSide
+	{
+		height: 300px;
+		background: url(../images/desktop/hero_tablet.jpg);
+	}
 
+	#notNavSide p
+	{
+		font-size: 1em;
+	}
+
+	#notNavSide h4
+	{
+		font-size: 1em;
+	}
+
+	#mainNav
+	{
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+
+	header
+	{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	header h3
+	{
+		font-size: 1.5em;
+		line-height: 130px;
+	}
+
+	#heroImg img
+	{
+		width: 600px;
+	}
+
+	#accordionNewsletters
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	#titleJoin p
+	{
+		font-size: 1em;
+	}
+
+	#donate-shop
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#donateInfo p, #shopInfo p
+	{
+		font-size: 0.8em;
+		padding: 15px;
+	}
+
+	#donateInfo
+	{
+		border-right: none;
+	}
+}
+
+@media screen and (min-width: 700px) {
+
+	#otherInfo
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#mapCon
+	{
+		display: block;
+	}
+
+}
+
+@media screen and (min-width: 745px) {
+	
+	header h3, #navSide
+	{
+		display: none;
+	}
+
+	#logoCon
+	{
+		height: 150px;
+		width: 150px;
+	}
+
+	#homeInfo
+	{
+		margin-top: 280px;
+	}
+
+	#homeInfo p
+	{
+		font-size: 1.2em;
+	}
+
+	#homeInfo h3
+	{
+		font-size: 1.2em;
+	}
+
+	#notNavSide
+	{
+		height: 400px;
+		background: url(../images/desktop/hero_tablet2.jpg);
+	}
+
+	#mainNav2
+	{
+		display: contents;
+	}
+
+	#mainNav2 ul
+	{
+		display: flex;
+		flex-direction: row;
+		font-size: 1em;
+		font-family: Arial, sans-serif;
+		margin-top: 40px;
+	}
+
+	#mainNav2 ul li a
+	{
+		padding: 10px;
+		color: black;
+		bottom: 0;
+		transition: .3s;
+	}
+
+	#mainNav2 ul li a:hover
+	{
+		color: green;
+	}
+
+	.homeSection
+	{
+		margin-top: -60px;
+		z-index: -1;
+	}
+
+	#accordionNewsletters
+	{
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	#accordionTitle
+	{
+		padding: 30px;
+	}
 }
