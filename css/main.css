@@ -18,6 +18,11 @@ img, button, input
 	transition: all 1s;
 }
 
+button, a, #backToTop
+{
+	cursor: pointer;
+}
+
 img:hover
 {
 	filter: brightness(130%);
@@ -665,10 +670,12 @@ header h3
 
 #aboutInfo
 {
-	background: url(../images/mobile/past_events_mobile_1.jpg) no-repeat;
+	background: url(../images/mobile/about1.jpg);
 	background-color: #ccc;
 	margin-left: 20px;
 	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 #page
@@ -687,6 +694,26 @@ header h3
 #page:last-child
 {
 	padding-bottom: 0;
+}
+
+#page2
+{
+	display: none;
+	padding: 20px;
+	background-color: rgba(1, 1, 1, .6);
+	padding-top: 0;
+}
+
+#page2 p
+{
+	color: white;
+	font-size: 1em;
+	padding-bottom: 20px;
+}
+
+#page2 p:first-child
+{
+	padding-top: 0;
 }
 
 /*contact us section*/
@@ -927,7 +954,12 @@ footer p
 	{
 		border-right: none;
 	}
-}
+
+	#aboutInfo
+	{
+		background: url(../images/desktop/about1.jpg);
+		background-attachment: fixed;
+	}
 
 @media screen and (min-width: 700px) {
 
@@ -1086,6 +1118,16 @@ footer p
 		{
 			height: 20px;
 		}
+
+		#page2, #page2 p:first-child
+		{
+			display: block;
+		}
+
+		#page2 p
+		{
+			display: none;
+		}
 }
 
 @media screen and (min-width: 1024px) {
@@ -1164,6 +1206,17 @@ footer p
 		background-attachment: fixed;
 	}
 
+	#aboutInfo
+	{
+		background: url(../images/desktop/about2.jpg);
+		background-attachment: fixed;
+	}
+
+	#titleAbout
+	{
+		padding-top: 96px;
+	}
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -1188,6 +1241,11 @@ footer p
 	#notNavSide
 	{
 		background-attachment: fixed;
+	}
+
+	#page2 p
+	{
+		display: block;
 	}
 
 }

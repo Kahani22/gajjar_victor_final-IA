@@ -3,9 +3,9 @@
 
 	let button 		= document.querySelector("#navButton");
 		mainNav		= document.querySelector("#mainNav");
-		mainNav		= document.querySelector("#mainNav2");
+		mainNav2	= document.querySelector("#mainNav2");
 		links		= document.querySelectorAll("#mainNav ul li a");
-		links		= document.querySelectorAll("#mainNav2 ul li a");
+		links2		= document.querySelectorAll("#mainNav2 ul li a");
 		backToTop	= document.querySelector("#backToTop");
 		homeArea	= document.querySelector("#homelinkCon");
 
@@ -64,6 +64,12 @@
 		TweenLite.to(window, 1, {scrollTo:{y:`#${contentArea}`, offsetY: 50, autoKill: false}});
 	}
 
+	function scrolling2(mainNav2) {
+		mainNav2.preventDefault();
+		let contentArea = mainNav2.currentTarget.id + "Con"
+		TweenLite.to(window, 1, {scrollTo:{y:`#${contentArea}`, offsetY: 50, autoKill: false}});
+	}
+
 	//back to top function
 	function scrollBackUp(e) {
 		e.preventDefault();
@@ -91,6 +97,8 @@
 	shopButtons.forEach(button3 => button3.addEventListener('click', shopImgAnim));
 
 	links.forEach(link => link.addEventListener('click', scrolling));
+	links2.forEach(link2 => link2.addEventListener('click', scrolling2));
+
 
 	backToTop.addEventListener('click', scrollBackUp);
 
