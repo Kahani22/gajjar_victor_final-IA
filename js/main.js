@@ -81,6 +81,7 @@
 	function closeVideoBox() {
 		video.classList.add('videoClose');
 	 closeVideo.classList.add('closeClose');
+	 	video.pause();
 	}
 
 
