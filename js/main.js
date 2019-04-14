@@ -9,8 +9,11 @@
 		backToTop	= document.querySelector("#backToTop");
 		homeArea	= document.querySelector("#homelinkCon");
 
+<<<<<<< HEAD
 		topBar		= document.querySelector("#topBar");
 
+=======
+>>>>>>> master
 		video		= document.querySelector("#TRAAvideo");
 		closeVid	= document.querySelector("#closeVideo")
 
