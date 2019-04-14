@@ -3,9 +3,14 @@
 
 	let button 		= document.querySelector("#navButton");
 		mainNav		= document.querySelector("#mainNav");
+		mainNav		= document.querySelector("#mainNav2");
 		links		= document.querySelectorAll("#mainNav ul li a");
+		links		= document.querySelectorAll("#mainNav2 ul li a");
 		backToTop	= document.querySelector("#backToTop");
 		homeArea	= document.querySelector("#homelinkCon");
+
+		video		= document.querySelector("#TRAAvideo");
+		closeVid	= document.querySelector("#closeVideo")
 
 	const	prjButtons  = document.querySelectorAll('.prjCircle'); 
 			projects	= document.querySelector("#projectsImages");
@@ -31,7 +36,7 @@
 
 	// projects animation
 	function projectAnim() {
-		const offSet = 350;
+		const offSet = 355;
 		let currentOffset = this.dataset.offset * offSet;
 		projects.style.right = currentOffset + "px";
 	}
@@ -54,7 +59,7 @@
 	function scrolling(e) {
 		e.preventDefault();
 		let contentArea = e.currentTarget.id + "Con"
-		TweenLite.to(window, 1, {scrollTo:{y:`#${contentArea}`, offsetY: 200, autoKill: false}});
+		TweenLite.to(window, 1, {scrollTo:{y:`#${contentArea}`, offsetY: 50, autoKill: false}});
 	}
 
 	//back to top function
@@ -63,6 +68,12 @@
 		TweenLite.to(window, 1, {scrollTo:{y:homeArea}, autoKill: false});
 	}
 
+	//close video lightbox
+
+	function closeVideoBox() {
+		video.classList.add('videoClose');
+	 closeVideo.classList.add('closeClose');
+	}
 
 
 	button.addEventListener("click", navMenu);
@@ -80,5 +91,7 @@
 	links.forEach(link => link.addEventListener('click', scrolling));
 
 	backToTop.addEventListener('click', scrollBackUp);
+
+	closeVid.addEventListener('click', closeVideoBox);
 
 })();
