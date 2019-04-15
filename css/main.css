@@ -5,6 +5,12 @@
 	display: none;
 }
 
+body
+{
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
 #topBar
 {
 	background-color: green;
@@ -277,6 +283,19 @@ header h3
 	padding: 10px;
 	height: 20px;
 	width: 20px;
+}
+
+#navIcons2
+{
+	display: none;
+	flex-direction: row;
+}
+
+#navIcons2 img
+{
+	padding: 5px;
+	height: 30px;
+	width: 30px;
 }
 
 /*newsletters section*/
@@ -793,6 +812,11 @@ header h3
 	height: 50px;
 }
 
+#subscription2
+{
+	display: none;
+}
+
 #subscription
 {
 	display: flex;
@@ -1128,6 +1152,37 @@ footer p
 		{
 			display: none;
 		}
+
+		#subscription
+		{
+			display: none;
+		}
+
+		footer
+		{
+			display: flex;
+			height: 60px;
+			justify-content: space-between;
+		}
+
+		#copyright
+		{
+			width: 300px;
+			line-height: 60px;
+		}
+
+		#subscription2
+		{
+			display: block;
+			margin-left: 20px;
+		}
+
+		#navIcons2
+		{
+			display: flex;
+			margin-right: 20px;
+			margin-top: 10px;
+		}
 }
 
 @media screen and (min-width: 1024px) {
@@ -1136,6 +1191,7 @@ footer p
 	{
 		height: 400px;
 		background: url(../images/desktop/hero_desktop.jpg);
+		background-position: center center;
 	}
 
 	#logoCon
