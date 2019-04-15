@@ -1,5 +1,5 @@
 # THAMES RIVER ANGLERS ASSOCIATION
-##Dedication Today for Tomorrow
+## Dedication Today for Tomorrow
 
 "For the enhancement, protection and promotion of a viable,
 multi-species fishery within the Thames River watershed.
