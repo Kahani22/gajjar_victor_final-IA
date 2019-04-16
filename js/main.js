@@ -7,7 +7,6 @@
 		links		= document.querySelectorAll("#mainNav ul li a");
 		links2		= document.querySelectorAll("#mainNav2 ul li a");
 		backToTop	= document.querySelector("#backToTop");
-		homeArea	= document.querySelector("#homelinkCon");
 
 		topBar		= document.querySelector("#topBar");
 
@@ -66,7 +65,7 @@
 
 	function scrolling2(mainNav2) {
 		mainNav2.preventDefault();
-		let contentArea = mainNav2.currentTarget.id + "Con"
+		let contentArea = mainNav2.currentTarget.id.slice(0,-1) + "Con"
 		TweenLite.to(window, 1, {scrollTo:{y:`#${contentArea}`, offsetY: 50, autoKill: false}});
 	}
 
